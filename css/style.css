@@ -217,7 +217,10 @@ img{
   right: 0;
   bottom: 0;
   width: 295px;
-
+}
+.home__img img{
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  background-color: var(--first-color);
 }
 
 /*BUTTONS*/
