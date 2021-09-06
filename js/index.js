@@ -55,3 +55,15 @@ sr.reveal('.work__img',{interval: 200});
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input',{interval: 200}); 
+
+// CONTACT FORM SUMBISSION CONFIRM
+const formSubmit = document.querySelector('.contact__button');
+
+formSubmit.addEventListener('click', (e)=>{
+  if (confirm("Are you sure to submit your form ?") == true) {
+    userPreference = "form succesfully submited";
+} else {
+  alert("form not submit !");
+  e.preventDefault(); 
+}
+});
